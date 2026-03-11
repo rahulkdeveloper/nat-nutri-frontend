@@ -1,4 +1,6 @@
 import React from "react";
+import homePageImage2 from "../assets/home2.jpeg";
+import natnutriImage1 from "../assets/natnutri1.jpeg"
 
 const HomePage = () => {
   return (
@@ -166,7 +168,7 @@ const HomePage = () => {
             <div className="col-lg-6">
 
               <img
-                src="https://cdn.cdnparenting.com/articles/2020/02/26165051/Roasted-Makhana-Recipe.webp"
+                src={homePageImage2}
                 className="img-fluid rounded"
                 alt="girl holding product"
               />
