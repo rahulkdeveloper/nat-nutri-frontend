@@ -1,9 +1,9 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
+} */
 
 .logo {
   height: 6em;
@@ -11,17 +11,441 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.hero-section{
+padding:100px 20px;
+background:#f8f9fa;
+}
+
+.hero-title{
+font-size:48px;
+}
+
+.hero-img{
+border-radius:15px;
+}
+
+.product-home-card{
+background:#fff;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+height:100%;
+}
+
+.product-home-card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+
+.makhana-benefits{
+padding:80px 20px;
+background:#fff;
+}
+
+.benefits-list{
+list-style:none;
+padding:0;
+}
+
+.benefits-list li{
+margin-bottom:12px;
+font-weight:500;
+}
+
+.lifestyle-section{
+padding:80px 20px;
+background:#f8f9fa;
+}
+
+.why-section{
+padding:80px 20px;
+}
+
+.why-card{
+background:#f8f9fa;
+padding:30px;
+border-radius:10px;
+}
+
+.home-cta{
+padding:80px 20px;
+background:linear-gradient(135deg,#2e7d32,#1b5e20);
+color:white;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: #28a745;
+}
+
+.social-icon {
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  color: #28a745;
+  transform: scale(1.2);
+}
+
+.hero-img {
+  height: 70vh;
+  object-fit: cover;
+}
+
+.product-card {
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.distributor-section {
+  background-image: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.distributor-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(46, 125, 50, 0.85);
+}
+
+.distributor-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* HERO */
+
+.story-hero {
+  height: 60vh;
+  background-image: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.story-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.story-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* TIMELINE */
+
+.timeline {
+  border-left: 3px solid #2e7d32;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+}
+
+.timeline-item h5 {
+  color: #2e7d32;
+  font-weight: 700;
+}
+
+
+/* GALLERY */
+
+.gallery-img {
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* HERO */
+
+.contact-hero {
+  height: 45vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1490818387583-1baba5e638af");
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* CONTACT CARDS */
+
+.contact-card {
+  padding: 25px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  height: 100%;
+}
+
+.contact-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .contact-form {
+  background: #fff;
+  height: 100%;
+} */
+
+.contact-card:hover {
+  transform: translateY(-6px);
+}
+
+
+/* SOCIAL ICONS */
+
+.social-icons svg {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons svg:hover {
+  color: #2e7d32;
+  transform: scale(1.2);
+}
+
+
+/* FORM */
+
+.contact-form {
+  background: #fff;
+}
+
+
+/* DISTRIBUTION CTA */
+
+.distribution-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);
+  border-radius: 15px;
+  margin: 60px auto;
+  max-width: 1100px;
+}
+
+
+/* HERO */
+
+.buy-hero{
+height:40vh;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url("https://images.unsplash.com/photo-1490818387583-1baba5e638af");
+background-size:cover;
+background-position:center;
+}
+
+
+/* MARKETPLACE CARD */
+
+.buy-card{
+padding:30px 20px;
+border-radius:12px;
+background:#fff;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+height:100%;
+}
+
+.buy-card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+
+
+/* ICON */
+
+.buy-icon{
+font-size:45px;
+}
+
+.amazon{color:#ff9900}
+.flipkart{color:#2874f0}
+.meesho{color:#f43397}
+.whatsapp{color:#25d366}
+
+
+/* TRUST SECTION */
+
+.trust-section{
+padding:80px 20px;
+background:#f8f9fa;
+}
+
+
+/* CTA */
+
+.buy-cta{
+padding:80px 20px;
+background:linear-gradient(135deg,#2e7d32,#1b5e20);
+margin-top:50px;
+}
+
+.products-hero{
+height:45vh;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url("https://images.unsplash.com/photo-1546069901-eacef0df6022");
+background-size:cover;
+background-position:center;
+}
+
+.product-points{
+list-style:none;
+padding:0;
+}
+
+.product-points li{
+margin-bottom:10px;
+position:relative;
+padding-left:20px;
+}
+
+.product-points li::before{
+content:"✓";
+position:absolute;
+left:0;
+color:green;
+font-weight:bold;
+}
+
+.product-card{
+background:#fff;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+height:100%;
+}
+
+.product-card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+.why-card{
+padding:30px;
+background:#f8f9fa;
+border-radius:10px;
+height:100%;
+}
+
+.products-cta{
+padding:80px 20px;
+background:linear-gradient(135deg,#2e7d32,#1b5e20);
+margin-top:40px;
+}
+
+.recipe-hero{
+height:45vh;
+display:flex;
+align-items:center;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url("https://images.unsplash.com/photo-1504674900247-0877df9cc836");
+background-size:cover;
+background-position:center;
+}
+
+.recipe-categories{
+padding:50px 20px;
+}
+
+.category-box{
+padding:20px;
+border-radius:10px;
+background:#f8f9fa;
+font-weight:600;
+transition:0.3s;
+}
+
+.category-box:hover{
+background:#2e7d32;
+color:white;
+transform:translateY(-4px);
+}
+
+.recipe-card{
+background:#fff;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.recipe-card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+.recipe-img{
+height:200px;
+width:100%;
+object-fit:cover;
+}
+
+.recipe-steps{
+font-size:14px;
+padding-left:18px;
+}
+
+.tips-section{
+padding:80px 20px;
+background:#f8f9fa;
+}
+
+.tip-card{
+background:white;
+padding:30px;
+border-radius:10px;
+}
+
+.recipe-cta{
+padding:80px 20px;
+background:linear-gradient(135deg,#2e7d32,#1b5e20);
 }
 
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -33,9 +457,9 @@
   }
 }
 
-.card {
+/* .card {
   padding: 2em;
-}
+} */
 
 .read-the-docs {
   color: #888;
