@@ -1,21 +1,16 @@
 import React from "react";
 import homePageImage2 from "../assets/home2.jpeg";
-import natnutriImage1 from "../assets/natnutri1.jpeg"
+import natnutriImage1 from "../assets/natnutri1.jpeg";
 
 const HomePage = () => {
   return (
     <div>
-
       {/* HERO */}
 
       <section className="hero-section d-flex align-items-center">
-
         <div className="container">
-
           <div className="row align-items-center">
-
             <div className="col-lg-6">
-
               <h1 className="fw-bold hero-title">
                 Healthy Snacking With
                 <span className="text-success"> NatNutri</span>
@@ -27,129 +22,117 @@ const HomePage = () => {
                 ingredients.
               </p>
 
-              <button className="btn btn-success px-4 me-3">
-                Shop Now
-              </button>
+              <button className="btn btn-success px-4 me-3">Shop Now</button>
 
               <button className="btn btn-outline-dark px-4">
                 Explore Products
               </button>
-
             </div>
 
             <div className="col-lg-6">
-
               <img
                 src="https://cdn.cdnparenting.com/articles/2020/02/26165051/Roasted-Makhana-Recipe.webp"
-                className="img-fluid hero-img"
+                className="img-fluid hero-img mt-4"
                 alt=""
               />
-
             </div>
-
           </div>
-
         </div>
-
       </section>
 
       {/* FEATURED PRODUCTS */}
 
       <section className="container py-5">
-
-        <h2 className="text-center fw-bold mb-5">
-          Our Popular Products
-        </h2>
+        <h2 className="text-center fw-bold mb-5">Our Popular Products</h2>
 
         <div className="row g-4">
+          {["Roasted Makhana", "Roasted Chana", "Atta", "Masala"].map(
+            (item) => (
+              <div className="col-md-3 col-6" key={item}>
+                <div className="product-home-card">
+                  <img
+                    src="https://cdn.cdnparenting.com/articles/2020/02/26165051/Roasted-Makhana-Recipe.webp"
+                    className="img-fluid"
+                  />
 
-          {["Roasted Makhana","Roasted Chana","Atta","Masala"].map((item)=>(
-            <div className="col-md-3 col-6" key={item}>
+                  <div className="p-3 text-center">
+                    <h6 className="fw-bold">{item}</h6>
 
-              <div className="product-home-card">
-
-                <img
-                  src="https://cdn.cdnparenting.com/articles/2020/02/26165051/Roasted-Makhana-Recipe.webp"
-                  className="img-fluid"
-                />
-
-                <div className="p-3 text-center">
-
-                  <h6 className="fw-bold">
-                    {item}
-                  </h6>
-
-                  <button className="btn btn-success btn-sm mt-2">
-                    View Product
-                  </button>
-
+                    <button className="btn btn-success btn-sm mt-2">
+                      View Product
+                    </button>
+                  </div>
                 </div>
-
               </div>
-
-            </div>
-          ))}
-
+            ),
+          )}
         </div>
-
       </section>
 
       {/* BENEFITS OF MAKHANA */}
 
       <section className="makhana-benefits">
-
         <div className="container">
-
           <div className="row align-items-center">
-
             <div className="col-lg-6">
-
               <img
-                src="https://cdn.cdnparenting.com/articles/2020/02/26165051/Roasted-Makhana-Recipe.webp"
-                className="img-fluid rounded shadow"
+                src={natnutriImage1}
+                className="img-fluid rounded shadow lifestyle-img"
                 alt=""
               />
-
             </div>
 
-            <div className="col-lg-6">
+            <div className="col-lg-6 mt-4">
+              <h2 className="fw-bold mb-4">Benefits of Makhana</h2>
 
-              <h2 className="fw-bold mb-4">
-                Benefits of Makhana
-              </h2>
+              <div className="benefits-grid">
+                <div className="benefit-item">
+                  <span className="benefit-icon">💪</span>
+                  <div>
+                    <h6>High Protein</h6>
+                    <p>Helps build muscle and keeps you energized.</p>
+                  </div>
+                </div>
 
-              <ul className="benefits-list">
+                <div className="benefit-item">
+                  <span className="benefit-icon">⚖️</span>
+                  <div>
+                    <h6>Low Calories</h6>
+                    <p>Perfect healthy snack for weight management.</p>
+                  </div>
+                </div>
 
-                <li>Rich in Protein & Calcium</li>
-                <li>Low Calories Healthy Snack</li>
-                <li>Supports Weight Loss</li>
-                <li>Good for Heart Health</li>
-                <li>Rich in Antioxidants</li>
+                <div className="benefit-item">
+                  <span className="benefit-icon">❤️</span>
+                  <div>
+                    <h6>Heart Friendly</h6>
+                    <p>Supports healthy cholesterol levels.</p>
+                  </div>
+                </div>
 
-              </ul>
+                <div className="benefit-item">
+                  <span className="benefit-icon">🛡️</span>
+                  <div>
+                    <h6>Rich in Antioxidants</h6>
+                    <p>Boosts immunity and protects the body.</p>
+                  </div>
+                </div>
+              </div>
 
-              <button className="btn btn-success mt-3">
+              <button className="btn btn-success mt-4 px-4">
                 Shop Makhana
               </button>
-
             </div>
-
           </div>
-
         </div>
-
       </section>
 
       {/* LIFESTYLE IMAGE */}
 
       <section className="lifestyle-section">
-
         <div className="container">
-
           <div className="row align-items-center">
-
             <div className="col-lg-6">
-
               <h2 className="fw-bold">
                 Healthy Lifestyle Starts With Healthy Food
               </h2>
@@ -159,40 +142,27 @@ const HomePage = () => {
                 lifestyle. Enjoy guilt-free snacks anytime.
               </p>
 
-              <button className="btn btn-success">
-                Discover More
-              </button>
-
+              <button className="btn btn-success">Discover More</button>
             </div>
 
-            <div className="col-lg-6">
-
+            <div className="col-lg-6 text-center mt-4">
               <img
                 src={homePageImage2}
-                className="img-fluid rounded"
+                className="img-fluid rounded lifestyle-img"
                 alt="girl holding product"
               />
-
             </div>
-
           </div>
-
         </div>
-
       </section>
 
       {/* WHY CHOOSE US */}
 
       <section className="why-section">
-
         <div className="container">
-
-          <h2 className="text-center fw-bold mb-5">
-            Why Choose NatNutri
-          </h2>
+          <h2 className="text-center fw-bold mb-5">Why Choose NatNutri</h2>
 
           <div className="row g-4 text-center">
-
             <div className="col-md-3">
               <div className="why-card">
                 <h5>100% Natural</h5>
@@ -220,35 +190,21 @@ const HomePage = () => {
                 <p>Loved by many customers</p>
               </div>
             </div>
-
           </div>
-
         </div>
-
       </section>
 
       {/* CTA */}
 
       <section className="home-cta text-center">
-
         <div className="container">
+          <h2 className="fw-bold">Ready To Eat Healthy?</h2>
 
-          <h2 className="fw-bold">
-            Ready To Eat Healthy?
-          </h2>
+          <p>Buy NatNutri products today from your favorite marketplace.</p>
 
-          <p>
-            Buy NatNutri products today from your favorite marketplace.
-          </p>
-
-          <button className="btn btn-light px-4">
-            Where To Buy
-          </button>
-
+          <button className="btn btn-light px-4">Where To Buy</button>
         </div>
-
       </section>
-
     </div>
   );
 };

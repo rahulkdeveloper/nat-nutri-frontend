@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
+import natnutriImage1 from "../assets/natnutri1.jpeg";
 
 const OurStory = () => {
   useEffect(() => {
@@ -32,31 +33,49 @@ const OurStory = () => {
 
       {/* OUR JOURNEY TIMELINE */}
 
-      <section className="container py-5">
-        <h2 className="text-center fw-bold mb-5">Our Journey</h2>
+      <section className=" py-5 rounded-2" style={{background:"#f8f9fa"}}>
+        <div className="container">
+          <h2 className="text-center fw-bold mb-5">Our Journey</h2>
 
-        <div className="timeline">
-          <div className="timeline-item" data-aos="fade-right">
-            <h5>2018</h5>
-            <p>
-              Nat Nutri started with a mission to deliver healthy nutrition.
-            </p>
-          </div>
+        <div className="row align-content-center">
+          <div className="col-lg-6">
+            <div className="timeline">
+              <div className="timeline-item" data-aos="fade-right">
+                <h5>2018</h5>
+                <p>
+                  Nat Nutri started with a mission to deliver healthy nutrition.
+                </p>
+              </div>
 
-          <div className="timeline-item" data-aos="fade-left">
-            <h5>2020</h5>
-            <p>Launched our first natural product line.</p>
-          </div>
+              <div className="timeline-item" data-aos="fade-left">
+                <h5>2020</h5>
+                <p>Launched our first natural product line.</p>
+              </div>
 
-          <div className="timeline-item" data-aos="fade-right">
-            <h5>2022</h5>
-            <p>Expanded distribution across multiple cities.</p>
-          </div>
+              <div className="timeline-item" data-aos="fade-right">
+                <h5>2022</h5>
+                <p>Expanded distribution across multiple cities.</p>
+              </div>
 
-          <div className="timeline-item" data-aos="fade-left">
-            <h5>2024</h5>
-            <p>Built a strong community of health conscious customers.</p>
+              <div className="timeline-item" data-aos="fade-left">
+                <h5>2024</h5>
+                <p>Built a strong community of health conscious customers.</p>
+              </div>
+            </div>
           </div>
+          <div className="col-lg-6">
+            <img
+              src={natnutriImage1}
+              className="img-fluid rounded shadow timeline-img"
+              style={{
+                maxWidth:"500px",
+                width:"100%",
+                height:"350px"
+              }}
+              alt=""
+            />
+          </div>
+        </div>
         </div>
       </section>
 
