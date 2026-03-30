@@ -1,14 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
-import NatNutriLogo from '../assets/logo.jpeg'
+import NatNutriLogo from "../assets/logo.jpeg";
 
 const Footer = () => {
   return (
     <footer className="bg-dark text-light pt-5 pb-3">
       <div className="container">
         <div className="row">
-
           {/* LEFT - LOGO + SOCIAL */}
           <div className="col-md-4 mb-4">
             <div className="d-flex align-items-center mb-3">
@@ -27,23 +26,29 @@ const Footer = () => {
             </p>
 
             <div className="d-flex gap-3 mt-3 fs-5">
-
-              <a href="#" className="text-light social-icon">
+              <a
+                href="https://www.facebook.com/share/17zwdEJFUD/"
+                target="_blank"
+                className="text-light social-icon"
+              >
                 <FaFacebookF />
               </a>
 
-              <a href="#" className="text-light social-icon">
+              <a
+                href="https://www.instagram.com/natnutri.in?igsh=MW85MnU4N21ucGh0cw=="
+                target="_blank"
+                className="text-light social-icon"
+              >
                 <FaInstagram />
               </a>
 
-              <a href="#" className="text-light social-icon">
-                <FaTwitter />
-              </a>
-
-              <a href="#" className="text-light social-icon">
+              <a
+                href="https://youtube.com/@natnutriofficial?si=G-3hNgKDwYX8d-4y"
+                target="_blank"
+                className="text-light social-icon"
+              >
                 <FaYoutube />
               </a>
-
             </div>
           </div>
 
@@ -52,27 +57,33 @@ const Footer = () => {
             <h5 className="mb-3">Quick Links</h5>
 
             <ul className="list-unstyled">
-
               <li className="mb-2">
-                <Link to="/" className="footer-link">Home</Link>
+                <Link to="/" className="footer-link">
+                  Home
+                </Link>
               </li>
 
               <li className="mb-2">
-                <Link to="/about" className="footer-link">About</Link>
+                <Link to="/about" className="footer-link">
+                  About
+                </Link>
               </li>
 
               <li className="mb-2">
-                <Link to="/products" className="footer-link">Products</Link>
+                <Link to="/products" className="footer-link">
+                  Products
+                </Link>
               </li>
 
-              <li className="mb-2">
+              {/* <li className="mb-2">
                 <Link to="/recipes" className="footer-link">Recipes</Link>
-              </li>
+              </li> */}
 
               <li className="mb-2">
-                <Link to="/where-to-buy" className="footer-link">Where to Buy</Link>
+                <Link to="/where-to-buy" className="footer-link">
+                  Where to Buy
+                </Link>
               </li>
-
             </ul>
           </div>
 
@@ -81,12 +92,12 @@ const Footer = () => {
             <h5 className="mb-3">Contact</h5>
 
             <p className="mb-1">
-              📍 123 Food Street, Delhi, India
+              📍1119A Sugar Factory Road,
+              Near New Pani Tanki ,Chhota Bariyarpur City ,
+              Purbi Champaran, Bihar-84540
             </p>
 
-            <p className="mb-3">
-              ✉ info@natnutri.com
-            </p>
+            <p className="mb-3">✉ natnutrifresh@gmail.com</p>
 
             <h6 className="mb-2">Subscribe</h6>
 
@@ -97,20 +108,15 @@ const Footer = () => {
                 placeholder="Enter email"
               />
 
-              <button className="btn btn-success">
-                Subscribe
-              </button>
+              <button className="btn btn-success">Subscribe</button>
             </div>
-
           </div>
-
         </div>
 
         {/* Bottom */}
         <div className="border-top border-secondary mt-4 pt-3 text-center">
           © 2026 Nat Nutri. All Rights Reserved.
         </div>
-
       </div>
     </footer>
   );

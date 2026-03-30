@@ -20,108 +20,115 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-.hero-section{
-padding:100px 20px;
-background:#f8f9fa;
+/* home css */
+
+/*  */
+
+.hero-section {
+  padding: 100px 20px;
+  background: #f8f9fa;
 }
 
-.hero-title{
-font-size:48px;
+.hero-title {
+  font-size: 48px;
 }
 
-.hero-img{
-border-radius:15px;
-}
-.benefits-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:20px;
+.hero-img {
+  border-radius: 15px;
 }
 
-.benefit-item{
-display:flex;
-gap:15px;
-align-items:flex-start;
-background:#f8f9fa;
-padding:15px;
-border-radius:10px;
-transition:0.3s;
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
-.benefit-item:hover{
-transform:translateY(-4px);
-box-shadow:0 8px 20px rgba(0,0,0,0.08);
+.benefit-item {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 
-.benefit-icon{
-font-size:26px;
+.benefit-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-.benefit-item h6{
-margin-bottom:3px;
-font-weight:600;
+.benefit-icon {
+  font-size: 26px;
 }
 
-.benefit-item p{
-font-size:14px;
-color:#666;
-margin:0;
+.benefit-item h6 {
+  margin-bottom: 3px;
+  font-weight: 600;
 }
-.lifestyle-img{
-  max-width: 20px;
+
+.benefit-item p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.lifestyle-img {
   width: 100%;
-  max-height:500px ;
-  border-radius:16px;
-box-shadow:0 20px 40px rgba(0,0,0,0.15);
-}
-.product-home-card{
-background:#fff;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-transition:0.3s;
-height:100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-.product-home-card:hover{
-transform:translateY(-6px);
-box-shadow:0 15px 40px rgba(0,0,0,0.15);
+.product-home-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  height: 100%;
 }
 
-.makhana-benefits{
-padding:80px 20px;
-background:#fff;
+.product-home-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
-.benefits-list{
-list-style:none;
-padding:0;
+.makhana-benefits {
+  padding: 80px 20px;
+  background: #fff;
 }
 
-.benefits-list li{
-margin-bottom:12px;
-font-weight:500;
+.benefits-list {
+  list-style: none;
+  padding: 0;
 }
 
-.lifestyle-section{
-padding:80px 20px;
-background:#f8f9fa;
+.benefits-list li {
+  margin-bottom: 12px;
+  font-weight: 500;
 }
 
-.why-section{
-padding:80px 20px;
+.lifestyle-section {
+  padding: 80px 20px;
+  background: #f8f9fa;
 }
 
-.why-card{
-background:#f8f9fa;
-padding:30px;
-border-radius:10px;
+.why-section {
+  padding: 80px 20px;
 }
 
-.home-cta{
-padding:80px 20px;
-background:linear-gradient(135deg,#2e7d32,#1b5e20);
-color:white;
+.why-card {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.home-cta {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);
+  color: white;
 }
 
 .footer-link {
@@ -306,180 +313,191 @@ color:white;
 
 /* HERO */
 
-.buy-hero{
-height:40vh;
-background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-url("https://images.unsplash.com/photo-1490818387583-1baba5e638af");
-background-size:cover;
-background-position:center;
+.buy-hero {
+  height: 40vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1490818387583-1baba5e638af");
+  background-size: cover;
+  background-position: center;
 }
 
 
 /* MARKETPLACE CARD */
 
-.buy-card{
-padding:30px 20px;
-border-radius:12px;
-background:#fff;
-box-shadow:0 8px 25px rgba(0,0,0,0.08);
-transition:0.3s;
-height:100%;
+.buy-card {
+  padding: 30px 20px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  height: 100%;
 }
 
-.buy-card:hover{
-transform:translateY(-8px);
-box-shadow:0 15px 40px rgba(0,0,0,0.15);
+.buy-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
 
 /* ICON */
 
-.buy-icon{
-font-size:45px;
+.buy-icon {
+  font-size: 45px;
 }
 
-.amazon{color:#ff9900}
-.flipkart{color:#2874f0}
-.meesho{color:#f43397}
-.whatsapp{color:#25d366}
+.amazon {
+  color: #ff9900
+}
+
+.flipkart {
+  color: #2874f0
+}
+
+.meesho {
+  color: #f43397
+}
+
+.whatsapp {
+  color: #25d366
+}
 
 
 /* TRUST SECTION */
 
-.trust-section{
-padding:80px 20px;
-background:#f8f9fa;
+.trust-section {
+  padding: 80px 20px;
+  background: #f8f9fa;
 }
 
 
 /* CTA */
 
-.buy-cta{
-padding:80px 20px;
-background:linear-gradient(135deg,#2e7d32,#1b5e20);
-margin-top:50px;
+.buy-cta {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);
+  margin-top: 50px;
 }
 
-.products-hero{
-height:45vh;
-background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-url("https://images.unsplash.com/photo-1546069901-eacef0df6022");
-background-size:cover;
-background-position:center;
+.products-hero {
+  height: 45vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1546069901-eacef0df6022");
+  background-size: cover;
+  background-position: center;
 }
 
-.product-points{
-list-style:none;
-padding:0;
+.product-points {
+  list-style: none;
+  padding: 0;
 }
 
-.product-points li{
-margin-bottom:10px;
-position:relative;
-padding-left:20px;
+.product-points li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
 }
 
-.product-points li::before{
-content:"✓";
-position:absolute;
-left:0;
-color:green;
-font-weight:bold;
+.product-points li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: green;
+  font-weight: bold;
 }
 
-.product-card{
-background:#fff;
-border-radius:10px;
-overflow:hidden;
-box-shadow:0 8px 25px rgba(0,0,0,0.08);
-transition:0.3s;
-height:100%;
+.product-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  height: 100%;
 }
 
-.product-card:hover{
-transform:translateY(-6px);
-box-shadow:0 15px 35px rgba(0,0,0,0.15);
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
-.why-card{
-padding:30px;
-background:#f8f9fa;
-border-radius:10px;
-height:100%;
+.why-card {
+  padding: 30px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  height: 100%;
 }
 
-.products-cta{
-padding:80px 20px;
-background:linear-gradient(135deg,#2e7d32,#1b5e20);
-margin-top:40px;
+.products-cta {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);
+  margin-top: 40px;
 }
 
-.recipe-hero{
-height:45vh;
-display:flex;
-align-items:center;
-background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-url("https://images.unsplash.com/photo-1504674900247-0877df9cc836");
-background-size:cover;
-background-position:center;
+.recipe-hero {
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1504674900247-0877df9cc836");
+  background-size: cover;
+  background-position: center;
 }
 
-.recipe-categories{
-padding:50px 20px;
+.recipe-categories {
+  padding: 50px 20px;
 }
 
-.category-box{
-padding:20px;
-border-radius:10px;
-background:#f8f9fa;
-font-weight:600;
-transition:0.3s;
+.category-box {
+  padding: 20px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
-.category-box:hover{
-background:#2e7d32;
-color:white;
-transform:translateY(-4px);
+.category-box:hover {
+  background: #2e7d32;
+  color: white;
+  transform: translateY(-4px);
 }
 
-.recipe-card{
-background:#fff;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-transition:0.3s;
+.recipe-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
 }
 
-.recipe-card:hover{
-transform:translateY(-6px);
-box-shadow:0 15px 35px rgba(0,0,0,0.15);
+.recipe-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
-.recipe-img{
-height:200px;
-width:100%;
-object-fit:cover;
+.recipe-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
 }
 
-.recipe-steps{
-font-size:14px;
-padding-left:18px;
+.recipe-steps {
+  font-size: 14px;
+  padding-left: 18px;
 }
 
-.tips-section{
-padding:80px 20px;
-background:#f8f9fa;
+.tips-section {
+  padding: 80px 20px;
+  background: #f8f9fa;
 }
 
-.tip-card{
-background:white;
-padding:30px;
-border-radius:10px;
+.tip-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
 }
 
-.recipe-cta{
-padding:80px 20px;
-background:linear-gradient(135deg,#2e7d32,#1b5e20);
+.recipe-cta {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);
 }
 
 @keyframes logo-spin {

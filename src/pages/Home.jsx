@@ -1,6 +1,9 @@
 import React from "react";
 import homePageImage2 from "../assets/home2.jpeg";
 import natnutriImage1 from "../assets/natnutri1.jpeg";
+import product1 from "../assets/product1.jpeg";
+import { Link } from "react-router-dom";
+import "./home.css";
 
 const HomePage = () => {
   return (
@@ -22,19 +25,25 @@ const HomePage = () => {
                 ingredients.
               </p>
 
-              <button className="btn btn-success px-4 me-3">Shop Now</button>
+              <Link className="btn btn-success px-4 me-3" to={"/prodcuts"}>
+                Shop Now
+              </Link>
 
-              <button className="btn btn-outline-dark px-4">
+              <Link className="btn btn-outline-dark px-4" to={"/products"}>
                 Explore Products
-              </button>
+              </Link>
             </div>
 
-            <div className="col-lg-6">
-              <img
-                src="https://cdn.cdnparenting.com/articles/2020/02/26165051/Roasted-Makhana-Recipe.webp"
-                className="img-fluid hero-img mt-4"
-                alt=""
-              />
+            <div className="col-lg-6 text-center mt-4">
+              {/* <img
+                src={homeHeroImg}
+                className="img-fluid"
+                style={{
+                  maxHeight: "650px",
+                  maxWidth: "500px",
+                  width: "100%"
+                }}
+              /> */}
             </div>
           </div>
         </div>
@@ -42,17 +51,18 @@ const HomePage = () => {
 
       {/* FEATURED PRODUCTS */}
 
-      <section className="container py-5">
+      {/* <section className="container py-5">
         <h2 className="text-center fw-bold mb-5">Our Popular Products</h2>
 
         <div className="row g-4">
-          {["Roasted Makhana", "Roasted Chana", "Atta", "Masala"].map(
+          {["Roasted Makhana", "Roasted Chana", "roasted"].map(
             (item) => (
               <div className="col-md-3 col-6" key={item}>
                 <div className="product-home-card">
                   <img
-                    src="https://cdn.cdnparenting.com/articles/2020/02/26165051/Roasted-Makhana-Recipe.webp"
+                    src={product1}
                     className="img-fluid"
+
                   />
 
                   <div className="p-3 text-center">
@@ -66,6 +76,59 @@ const HomePage = () => {
               </div>
             ),
           )}
+        </div>
+      </section> */}
+
+      {/* categories section  */}
+
+      <section className="categories-section py-5">
+        <div className="container">
+          <h2 className="text-center fw-bold mb-5">Our Categories</h2>
+
+          <div className="row g-4">
+            {/* MAKHANA */}
+
+            <div className="col-md-6">
+              <div className="category-card">
+                <img src={natnutriImage1} alt="makhana" />
+
+                <div className="category-overlay">
+                  <h3>Makhana</h3>
+
+                  <p>
+                    Healthy roasted makhana snacks for your daily nutrition.
+                  </p>
+
+                  <Link className="btn btn-light" to={"/products"}>
+                    Explore
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* MULTIGRAIN */}
+
+            <div className="col-md-6">
+              <div className="category-card">
+                <img
+                  src="https://images.unsplash.com/photo-1586201375761-83865001e31c"
+                  alt="multigrain"
+                />
+
+                <div className="category-overlay">
+                  <h3>Multigrain</h3>
+
+                  <p>
+                    Premium atta and multigrain products for healthy living.
+                  </p>
+
+                  <Link className="btn btn-light" to={"/products"}>
+                    Explore
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -119,10 +182,62 @@ const HomePage = () => {
                 </div>
               </div>
 
-              <button className="btn btn-success mt-4 px-4">
+              <Link className="btn btn-success mt-4 px-4" to={"/products"}>
                 Shop Makhana
-              </button>
+              </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="container py-5">
+        <div className="row align-items-center g-4">
+          {/* LEFT IMAGE */}
+          
+
+          {/* RIGHT CONTENT */}
+          <div className="col-lg-6 col-12">
+            <h2 className="fw-bold mb-4">Health Conscious Choice</h2>
+
+            <div className="row g-3">
+              <div className="col-sm-6 col-12">
+                <div className="health-card p-3">
+                  <h6>Good for Diabetes</h6>
+                  <p>Low glycemic index makes it safe for sugar patients.</p>
+                </div>
+              </div>
+
+              <div className="col-sm-6 col-12">
+                <div className="health-card p-3">
+                  <h6>Weight Management</h6>
+                  <p>Low in calories and keeps you full for longer.</p>
+                </div>
+              </div>
+
+              <div className="col-sm-6 col-12">
+                <div className="health-card p-3">
+                  <h6>Heart Health</h6>
+                  <p>Helps control cholesterol and supports heart function.</p>
+                </div>
+              </div>
+
+              <div className="col-sm-6 col-12">
+                <div className="health-card p-3">
+                  <h6>Digestive Health</h6>
+                  <p>Easy to digest and supports gut health.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-6 col-12 text-center">
+            <img
+              src={
+                "https://cdn.cdnparenting.com/articles/2020/02/26165051/Roasted-Makhana-Recipe.webp"
+              } // replace with your image
+              alt="Makhana Health Benefits"
+              className="img-fluid rounded shadow"
+            />
           </div>
         </div>
       </section>
@@ -202,7 +317,9 @@ const HomePage = () => {
 
           <p>Buy NatNutri products today from your favorite marketplace.</p>
 
-          <button className="btn btn-light px-4">Where To Buy</button>
+          <Link className="btn btn-light px-4" to={"/where-to-buy"}>
+            Where To Buy
+          </Link>
         </div>
       </section>
     </div>

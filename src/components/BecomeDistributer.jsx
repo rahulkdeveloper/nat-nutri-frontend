@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const BecomeDistributer = () => {
   return (
@@ -11,7 +12,7 @@ const BecomeDistributer = () => {
             nutrition products to more people across the country.
           </p>
 
-          <button className="btn btn-light mt-3">Apply Now</button>
+          <Link className="btn btn-light mt-3" to={"/contact-us"}>Apply Now</Link>
         </div>
       </section>
   )

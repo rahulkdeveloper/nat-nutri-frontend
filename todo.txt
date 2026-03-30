@@ -1,0 +1,5 @@
+1. add section - health consicous section (image + health benefits descriptions)//
+2. comment out our story and recipe page //
+3. remove products card section 
+4. add our category section  - makhana and multigrain //
+5. remove alll from products - add makhana product cards and add multigrain cards.//

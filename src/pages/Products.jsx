@@ -1,4 +1,5 @@
 import React from "react";
+import ProductCard from "../components/ProductCard";
 
 const products = [
   {
@@ -60,7 +61,7 @@ const ProductsPage = () => {
 
       {/* OUR PRODUCTS */}
 
-      <section className="container py-5">
+      {/* <section className="container py-5">
 
         <h2 className="text-center fw-bold mb-5">
           Our Best Products
@@ -97,16 +98,16 @@ const ProductsPage = () => {
 
           </div>
         ))}
-      </section>
+      </section> */}
 
-      {/* AVAILABLE PRODUCTS */}
+      {/* Makhana PRODUCTS */}
 
       <section className="bg-light py-5">
 
         <div className="container">
 
           <h2 className="text-center fw-bold mb-5">
-            Available Products
+            Makhana
           </h2>
 
           <div className="row g-4">
@@ -114,31 +115,33 @@ const ProductsPage = () => {
             {[1,2,3,4].map((item)=>(
               <div className="col-md-3 col-sm-6" key={item}>
 
-                <div className="product-card">
+                <ProductCard/>
 
-                  <img
-                    src="https://cdn.cdnparenting.com/articles/2020/02/26165051/Roasted-Makhana-Recipe.webp"
-                    alt=""
-                    className="img-fluid"
-                  />
+              </div>
+            ))}
 
-                  <div className="p-3">
+          </div>
 
-                    <h6 className="fw-bold">
-                      Roasted Makhana
-                    </h6>
+        </div>
 
-                    <p className="text-muted small">
-                      Healthy roasted snack rich in protein.
-                    </p>
+      </section>
 
-                    <button className="btn btn-success btn-sm w-100">
-                      Buy Now
-                    </button>
+      {/* MultiGrain PRODUCTS */}
 
-                  </div>
+      <section className="bg-light py-5">
 
-                </div>
+        <div className="container">
+
+          <h2 className="text-center fw-bold mb-5">
+            Multigrains
+          </h2>
+
+          <div className="row g-4">
+
+            {[1,2,3,4].map((item)=>(
+              <div className="col-md-3 col-sm-6" key={item}>
+
+                <ProductCard comingSoon={true}/>
 
               </div>
             ))}

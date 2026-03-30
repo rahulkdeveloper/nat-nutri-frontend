@@ -51,7 +51,7 @@ const About = () => {
 
       {/* MOST LOVED PRODUCTS */}
 
-      <section className="container py-5">
+      {/* <section className="container py-5">
         <h2 className="text-center fw-bold mb-5">Most Loved Products</h2>
 
         <div className="row g-4">
@@ -112,7 +112,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* OUR COMMUNITY */}
 

@@ -46,13 +46,13 @@ const Navbar = () => {
               <Link className="nav-link fw-medium" to="/products">Products</Link>
             </li>
 
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link className="nav-link fw-medium" to="/recipes">Recipes</Link>
             </li>
 
             <li className="nav-item">
               <Link className="nav-link fw-medium" to="/our-story">Our Story</Link>
-            </li>
+            </li> */}
 
             <li className="nav-item">
               <Link className="nav-link fw-medium" to="/where-to-buy">Where to Buy</Link>
