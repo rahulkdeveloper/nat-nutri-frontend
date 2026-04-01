@@ -1,9 +1,10 @@
 import React from "react";
 import ProductCard from "../components/ProductCard";
+import bajraImg from "../assets/bajra.jpeg"
 
-const products = [
+const multigrainProducts = [
   {
-    title: "Roasted Makhana",
+    title: "Bajra",
     img: "https://cdn.cdnparenting.com/articles/2020/02/26165051/Roasted-Makhana-Recipe.webp",
     points: [
       "High Protein Snack",

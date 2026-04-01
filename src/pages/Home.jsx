@@ -4,47 +4,61 @@ import natnutriImage1 from "../assets/natnutri1.jpeg";
 import product1 from "../assets/product1.jpeg";
 import { Link } from "react-router-dom";
 import "./home.css";
+import homeHero from "../assets/homeHero.jpeg";
+import cateImg from "../assets/category1.jpg"
 
 const HomePage = () => {
   return (
     <div>
       {/* HERO */}
 
-      <section className="hero-section d-flex align-items-center">
+      <section
+        className="hero-section d-flex"
+        style={{
+          backgroundImage: `url(${homeHero})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          minHeight: "70vh",
+        }}
+      >
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
-              <h1 className="fw-bold hero-title">
-                Healthy Snacking With
-                <span className="text-success"> NatNutri</span>
+              <h1 className="fw-bold hero-title" style={{color:"#49942b"}}>
+                NatNutri
+                {/* <span className="text-success"> NatNutri</span> */}
               </h1>
 
-              <p className="hero-text">
-                Discover delicious and healthy snacks like roasted makhana,
-                roasted chana, premium atta and spices made from natural
-                ingredients.
-              </p>
+              <h5 className="hero-text" style={{
+                fontSize:"22px",
+                marginTop:"-5px",
+                color:"#ffffff"
+                // fontWeight:""
+              }}>
+                From Nature to Nutrition.
+              </h5>
 
               <Link className="btn btn-success px-4 me-3" to={"/prodcuts"}>
                 Shop Now
               </Link>
 
-              <Link className="btn btn-outline-dark px-4" to={"/products"}>
+              <Link className="btn btn-danger px-4" to={"/products"}>
                 Explore Products
               </Link>
             </div>
 
-            <div className="col-lg-6 text-center mt-4">
-              {/* <img
-                src={homeHeroImg}
+            {/* <div className="col-lg-6 text-center mt-4">
+              <img
+                src={homeHero}
                 className="img-fluid"
                 style={{
                   maxHeight: "650px",
                   maxWidth: "500px",
                   width: "100%"
                 }}
-              /> */}
-            </div>
+              />
+            </div> */}
           </div>
         </div>
       </section>
@@ -90,14 +104,14 @@ const HomePage = () => {
 
             <div className="col-md-6">
               <div className="category-card">
-                <img src={natnutriImage1} alt="makhana" />
+                <img src={"https://res.cloudinary.com/dlfuxeq5r/image/upload/v1775043568/uploads/ag4opko40okh6ont4ybr.jpg"} alt="makhana" />
 
                 <div className="category-overlay">
                   <h3>Makhana</h3>
 
-                  <p>
+                  {/* <p>
                     Healthy roasted makhana snacks for your daily nutrition.
-                  </p>
+                  </p> */}
 
                   <Link className="btn btn-light" to={"/products"}>
                     Explore
@@ -111,16 +125,16 @@ const HomePage = () => {
             <div className="col-md-6">
               <div className="category-card">
                 <img
-                  src="https://images.unsplash.com/photo-1586201375761-83865001e31c"
+                  src="https://res.cloudinary.com/dlfuxeq5r/image/upload/v1775043743/uploads/gldpwcomg035zosnjorc.jpg"
                   alt="multigrain"
                 />
 
                 <div className="category-overlay">
                   <h3>Multigrain</h3>
 
-                  <p>
+                  {/* <p>
                     Premium atta and multigrain products for healthy living.
-                  </p>
+                  </p> */}
 
                   <Link className="btn btn-light" to={"/products"}>
                     Explore
@@ -193,7 +207,6 @@ const HomePage = () => {
       <section className="container py-5">
         <div className="row align-items-center g-4">
           {/* LEFT IMAGE */}
-          
 
           {/* RIGHT CONTENT */}
           <div className="col-lg-6 col-12">
@@ -262,7 +275,8 @@ const HomePage = () => {
 
             <div className="col-lg-6 text-center mt-4">
               <img
-                src={homePageImage2}
+                // src={homePageImage2}
+                src={"https://res.cloudinary.com/dlfuxeq5r/image/upload/v1775044275/uploads/vkl6uehcbxuxynhbnaiz.png"}
                 className="img-fluid rounded lifestyle-img"
                 alt="girl holding product"
               />
