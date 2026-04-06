@@ -4,8 +4,8 @@ import bajraImg from "../assets/bajra.jpeg"
 
 const makhanaProducts = [
   {
-    title: "Roasted",
-    img: "https://res.cloudinary.com/dlfuxeq5r/image/upload/v1775491997/uploads/b8fhawsto9ygb4vjsnh0.jpg",
+    title: "Roasted Makhana (Black paper & Rock salt)",
+    img: "https://res.cloudinary.com/dlfuxeq5r/image/upload/v1775493978/uploads/imml3rbkhek1bxlpj7og.jpg",
     description:"Healthy roasted snack rich in protein.",
     points: [
       "High Protein Snack",
@@ -15,8 +15,8 @@ const makhanaProducts = [
     ],
   },
   {
-    title: "NatNutri Atta",
-    img: "https://cdn.cdnparenting.com/articles/2020/02/26165051/Roasted-Makhana-Recipe.webp",
+    title: "Roasted Makhana (Moringa)",
+    img: "https://res.cloudinary.com/dlfuxeq5r/image/upload/v1775494015/uploads/e3a2h0gvqtnllsbeaxsg.jpg",
     description:"Healthy roasted snack rich in protein.",
     points: [
       "Stone Ground Atta",
@@ -26,25 +26,14 @@ const makhanaProducts = [
     ],
   },
   {
-    title: "Masala Setu",
-    img: "https://cdn.cdnparenting.com/articles/2020/02/26165051/Roasted-Makhana-Recipe.webp",
+    title: "Roasted Makhana (Pure Desi ghee)",
+    img: "https://res.cloudinary.com/dlfuxeq5r/image/upload/v1775494048/uploads/wsqkfwwtesogokta4iug.jpg",
     description:"Healthy roasted snack rich in protein.",
     points: [
       "Authentic Indian Spices",
       "Strong Aroma",
       "Premium Ingredients",
       "Healthy Cooking",
-    ],
-  },
-  {
-    title: "Healthy Mix",
-    img: "https://cdn.cdnparenting.com/articles/2020/02/26165051/Roasted-Makhana-Recipe.webp",
-    description:"Healthy roasted snack rich in protein.",
-    points: [
-      "Nutritious Blend",
-      "Energy Booster",
-      "Natural Ingredients",
-      "Perfect Snack",
     ],
   },
 ];
@@ -171,7 +160,7 @@ const ProductsPage = () => {
           <div className="row g-4">
 
             {makhanaProducts.map((item)=>(
-              <div className="col-md-3 col-sm-6" key={item}>
+              <div className="col-md-4 col-sm-6 d-flex justify-content-center" key={item}>
 
                 <ProductCard product = {item}/>
 
