@@ -2,10 +2,11 @@ import React from "react";
 import ProductCard from "../components/ProductCard";
 import bajraImg from "../assets/bajra.jpeg"
 
-const multigrainProducts = [
+const makhanaProducts = [
   {
-    title: "Bajra",
-    img: "https://cdn.cdnparenting.com/articles/2020/02/26165051/Roasted-Makhana-Recipe.webp",
+    title: "Roasted",
+    img: "https://res.cloudinary.com/dlfuxeq5r/image/upload/v1775491997/uploads/b8fhawsto9ygb4vjsnh0.jpg",
+    description:"Healthy roasted snack rich in protein.",
     points: [
       "High Protein Snack",
       "Low Calories",
@@ -16,6 +17,7 @@ const multigrainProducts = [
   {
     title: "NatNutri Atta",
     img: "https://cdn.cdnparenting.com/articles/2020/02/26165051/Roasted-Makhana-Recipe.webp",
+    description:"Healthy roasted snack rich in protein.",
     points: [
       "Stone Ground Atta",
       "Rich in Fiber",
@@ -26,6 +28,7 @@ const multigrainProducts = [
   {
     title: "Masala Setu",
     img: "https://cdn.cdnparenting.com/articles/2020/02/26165051/Roasted-Makhana-Recipe.webp",
+    description:"Healthy roasted snack rich in protein.",
     points: [
       "Authentic Indian Spices",
       "Strong Aroma",
@@ -36,6 +39,54 @@ const multigrainProducts = [
   {
     title: "Healthy Mix",
     img: "https://cdn.cdnparenting.com/articles/2020/02/26165051/Roasted-Makhana-Recipe.webp",
+    description:"Healthy roasted snack rich in protein.",
+    points: [
+      "Nutritious Blend",
+      "Energy Booster",
+      "Natural Ingredients",
+      "Perfect Snack",
+    ],
+  },
+];
+
+const multigrainProducts = [
+  {
+    title: "Bajra",
+    img: "https://res.cloudinary.com/dlfuxeq5r/image/upload/v1775491997/uploads/b8fhawsto9ygb4vjsnh0.jpg",
+    description:"Healthy roasted snack rich in protein.",
+    points: [
+      "High Protein Snack",
+      "Low Calories",
+      "Perfect for Healthy Diet",
+      "Premium Quality Seeds",
+    ],
+  },
+  {
+    title: "Maruaa",
+    img: "https://res.cloudinary.com/dlfuxeq5r/image/upload/v1775492644/uploads/jdojbyfwknssn8bysjlp.jpg",
+    description:"Healthy roasted snack rich in protein.",
+    points: [
+      "Stone Ground Atta",
+      "Rich in Fiber",
+      "No Chemicals",
+      "Fresh Packed",
+    ],
+  },
+  {
+    title: "Makka",
+    img: "https://res.cloudinary.com/dlfuxeq5r/image/upload/v1775492709/uploads/m8d5tpdvgucgm0vbcehe.jpg",
+    description:"Healthy roasted snack rich in protein.",
+    points: [
+      "Authentic Indian Spices",
+      "Strong Aroma",
+      "Premium Ingredients",
+      "Healthy Cooking",
+    ],
+  },
+  {
+    title: "Jwar",
+    img: "https://res.cloudinary.com/dlfuxeq5r/image/upload/v1775492788/uploads/g8cpganjnx6xm79mryzn.jpg",
+    description:"Healthy roasted snack rich in protein.",
     points: [
       "Nutritious Blend",
       "Energy Booster",
@@ -50,7 +101,13 @@ const ProductsPage = () => {
     <div>
       {/* HERO */}
 
-      <section className="products-hero d-flex align-items-center text-white text-center">
+      <section className="products-hero d-flex align-items-center text-white text-center" style={{
+          backgroundImage: `url(https://res.cloudinary.com/dlfuxeq5r/image/upload/v1775491384/uploads/dmy6zrzdvntlp1u9sweo.jpg)`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          minHeight: "50vh",
+        }}>
         <div className="container">
           <h1 className="fw-bold">Our Products</h1>
           <p className="col-lg-6 mx-auto">
@@ -113,10 +170,10 @@ const ProductsPage = () => {
 
           <div className="row g-4">
 
-            {[1,2,3,4].map((item)=>(
+            {makhanaProducts.map((item)=>(
               <div className="col-md-3 col-sm-6" key={item}>
 
-                <ProductCard/>
+                <ProductCard product = {item}/>
 
               </div>
             ))}
@@ -139,10 +196,10 @@ const ProductsPage = () => {
 
           <div className="row g-4">
 
-            {[1,2,3,4].map((item)=>(
+            {multigrainProducts.map((item)=>(
               <div className="col-md-3 col-sm-6" key={item}>
 
-                <ProductCard comingSoon={true}/>
+                <ProductCard product = {item} comingSoon={true}/>
 
               </div>
             ))}

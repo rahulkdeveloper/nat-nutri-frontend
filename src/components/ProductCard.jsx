@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProductCard = ({ comingSoon = false }) => {
+const ProductCard = ({ product,comingSoon = false }) => {
   return (
     <div className="product-card position-relative">
 
@@ -12,16 +12,16 @@ const ProductCard = ({ comingSoon = false }) => {
       )}
 
       <img
-        src="https://cdn.cdnparenting.com/articles/2020/02/26165051/Roasted-Makhana-Recipe.webp"
+        src={product.img}
         alt=""
         className="img-fluid"
       />
 
       <div className="p-3">
-        <h6 className="fw-bold">Roasted Makhana</h6>
+        <h6 className="fw-bold">{product.title}</h6>
 
         <p className="text-muted small">
-          Healthy roasted snack rich in protein.
+          {product.description || ""}
         </p>
 
         <button

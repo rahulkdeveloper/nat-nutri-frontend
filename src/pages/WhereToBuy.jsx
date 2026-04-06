@@ -18,7 +18,16 @@ const WhereToBuy = () => {
     <div>
       {/* HERO */}
 
-      <section className="buy-hero text-center text-white d-flex align-items-center">
+      <section
+        className="buy-hero text-center text-white d-flex align-items-center"
+        style={{
+          backgroundImage: `url(https://res.cloudinary.com/dlfuxeq5r/image/upload/v1775491384/uploads/dmy6zrzdvntlp1u9sweo.jpg)`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          minHeight: "50vh",
+        }}
+      >
         <div className="container">
           <h1 className="fw-bold mb-3">Where To Buy</h1>
           <p className="col-lg-6 mx-auto">

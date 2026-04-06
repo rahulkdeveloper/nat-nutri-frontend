@@ -28,7 +28,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     console.log("sending message===");
-    
+
     e.preventDefault();
     setSubmitStatus("pending");
 
@@ -39,8 +39,7 @@ const Contact = () => {
       message,
     };
 
-    console.log("formData===",formData);
-    
+    console.log("formData===", formData);
 
     try {
       await fetch(
@@ -55,7 +54,7 @@ const Contact = () => {
       setEmail("");
       setName("");
       setPhone("");
-      setMessage("")
+      setMessage("");
 
       alert("Submitted successfully!");
     } catch (err) {
@@ -68,7 +67,16 @@ const Contact = () => {
     <div>
       {/* HERO SECTION */}
 
-      <section className="contact-hero text-white text-center d-flex align-items-center">
+      <section
+        className="contact-hero text-white text-center d-flex align-items-center"
+        style={{
+          backgroundImage: `url(https://res.cloudinary.com/dlfuxeq5r/image/upload/v1775491384/uploads/dmy6zrzdvntlp1u9sweo.jpg)`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          minHeight: "50vh",
+        }}
+      >
         <div className="container">
           <h1 className="fw-bold mb-3">Contact & Get in Touch</h1>
           <p className="col-lg-7 mx-auto">
@@ -120,7 +128,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="text-success"
                 >
-                  <FaFacebookF />
+                  <FaFacebookF size={40} color="blue" />
                 </a>
 
                 <a
@@ -129,7 +137,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="text-success"
                 >
-                  <FaInstagram />
+                  <FaInstagram size={50} color="pink" />
                 </a>
 
                 <a
@@ -138,7 +146,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="text-success"
                 >
-                  <FaYoutube />
+                  <FaYoutube size={50} color="red" />
                 </a>
               </div>
             </div>
@@ -149,18 +157,10 @@ const Contact = () => {
       {/* CONTACT FORM */}
 
       <section className="container pb-5">
-        <div className="row align-items-stretch g-4">
-          <div className="col-lg-6">
-            <img
-              src="https://images.unsplash.com/photo-1572449043416-55f4685c9bb7"
-              className="img-fluid rounded shadow"
-              alt="contact"
-            />
-          </div>
-
-          <div className="col-lg-6 d-flex">
-            <div className="contact-form shadow p-4 rounded w-100">
-              <h3 className="mb-4">Send Message</h3>
+        <div className="row justify-content-center">
+          <div className="col-lg-8 col-md-8">
+            <div className="contact-form shadow p-4 rounded">
+              <h3 className="mb-4 text-center">Send Message</h3>
 
               <form>
                 <div className="mb-3">

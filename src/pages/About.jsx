@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import { FaHeart } from "react-icons/fa";
 import BecomeDistributer from "../components/BecomeDistributer";
+import "./about.css"
 
 const About = () => {
   useEffect(() => {
@@ -12,28 +13,10 @@ const About = () => {
     <div>
       {/* HERO SLIDER */}
 
-      <div id="aboutSlider" className="carousel slide" data-bs-ride="carousel">
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img
-              src="https://images.unsplash.com/photo-1490645935967-10de6ba17061"
-              className="d-block w-100 hero-img"
-            />
-          </div>
-
-          <div className="carousel-item">
-            <img
-              src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c"
-              className="d-block w-100 hero-img"
-            />
-          </div>
-
-          <div className="carousel-item">
-            <img
-              src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd"
-              className="d-block w-100 hero-img"
-            />
-          </div>
+      <div className="about-hero-section d-flex align-items-center justify-content-center">
+        <div className="text-center">
+          {/* <h1>Welcome to Our Website</h1>
+          <p>Delicious food, delivered to you</p> */}
         </div>
       </div>
 
@@ -139,7 +122,7 @@ const About = () => {
 
       {/* BECOME DISTRIBUTOR */}
 
-      <BecomeDistributer/>
+      <BecomeDistributer />
     </div>
   );
 };

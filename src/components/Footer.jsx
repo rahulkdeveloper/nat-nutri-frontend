@@ -31,7 +31,7 @@ const Footer = () => {
                 target="_blank"
                 className="text-light social-icon"
               >
-                <FaFacebookF />
+                <FaFacebookF size={30} color="blue" />
               </a>
 
               <a
@@ -39,7 +39,7 @@ const Footer = () => {
                 target="_blank"
                 className="text-light social-icon"
               >
-                <FaInstagram />
+                <FaInstagram size={40} color="pink" />
               </a>
 
               <a
@@ -47,7 +47,7 @@ const Footer = () => {
                 target="_blank"
                 className="text-light social-icon"
               >
-                <FaYoutube />
+                <FaYoutube size={40} color="red" />
               </a>
             </div>
           </div>
